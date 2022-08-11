@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="ru">
+	@@include('html/_head.htm',{
+	"title":"Главная"
+	})
+	<body>
+		<div class="wrapper">
+			@@include('html/_header.htm',{})
+			<main class="page">
+				<section class="page__new-products new-products">
+					<div class="new-products__container">
+						<div class="new-products__title title">Check out the<span>Store</span></div>
+						@@include('html/_products-slider.htm',{
+						"title":"NEW ON THE BOARD",
+						"moretext":"view all"
+						})
+					</div>
+				</section>
+				<section class="page__top-products top-products">
+					<div class="top-products__container">
+						@@include('html/_products-slider.htm',{
+							"title":"TOP SELLING",
+							"moretext":"view all"
+						})
+					</div>
+				</section>
+				<section class="page__categories categories">
+					<div class="categories__container">
+						<div class="categories__title title">Choose based on <span>Categories</span></div>
+						<div class="categories__items">
+							<div class="categories__item item-categories">
+								<div class="item-categories__image"><img src="@img/category/01.jpg" alt=""></div>
+								<button type="submit" class="item-categories__name">Acoustic</button>
+							</div>
+							<div class="categories__item item-categories">
+								<div class="item-categories__image"><img src="@img/category/02.jpg" alt=""></div>
+								<button type="submit" class="item-categories__name">Electric</button>
+							</div>
+							<div class="categories__item item-categories">
+								<div class="item-categories__image"><img src="@img/category/03.jpg" alt=""></div>
+								<button type="submit" class="item-categories__name">Basses</button>
+							</div>
+							<div class="categories__item item-categories">
+								<div class="item-categories__image"><img src="@img/category/04.jpg" alt=""></div>
+								<button type="submit" class="item-categories__name">Collections</button>
+							</div>
+						</div>
+					</div>
+				</section>
+				<section class="page__brands brands">
+					<div class="brands__container">
+						<div class="brands__body">
+							<div class="brands__title title">Featuring the <span>Best Brands</span></div>
+							<div class="brands__icons">
+								<div class="brands__icon"><img src="@img/brands/01.svg" alt=""></div>
+								<div class="brands__icon"><img src="@img/brands/02.svg" alt=""></div>
+								<div class="brands__icon"><img src="@img/brands/03.svg" alt=""></div>
+								<div class="brands__icon"><img src="@img/brands/04.svg" alt=""></div>
+								<div class="brands__icon"><img src="@img/brands/05.svg" alt=""></div>
+								<div class="brands__icon"><img src="@img/brands/06.svg" alt=""></div>
+								<div class="brands__icon"><img src="@img/brands/07.svg" alt=""></div>
+								<div class="brands__icon"><img src="@img/brands/08.svg" alt=""></div>
+							</div>
+						</div>
+					</div>
+				</section>
+				<section class="page__why why">
+					<div class="why__container">
+						<div class="why__body">
+							<div class="why__main-title title">Why try <span>Rhythm?</span></div>
+							<div class="why__items">
+								<div class="why__item">
+									<div class="why__icon"><img src="@img/why/01.svg" alt=""></div>
+									<div class="why__title">Smooth Browsing</div>
+									<div class="why__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</div>
+								</div>
+								<div class="why__item">
+									<div class="why__icon"><img src="@img/why/02.svg" alt=""></div>
+									<div class="why__title">EASY Delivery</div>
+									<div class="why__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</div>
+								</div>
+								<div class="why__item">
+									<div class="why__icon"><img src="@img/why/03.svg" alt=""></div>
+									<div class="why__title">SwiFT PAYMENTS</div>
+									<div class="why__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</section>
+				<section class="page__reviews reviews">
+					<div class="reviews__container">
+						<div class="reviews__title title">What our <span>customer’s</span> say</div>
+						@@include('html/_reviews.htm',{})
+					</div>
+				</section>
+				<section class="page__app app">
+					<div class="app__container">
+						<div class="app__content">
+							<div class="app__app-block">
+								<div class="app__title title">Browse and buy your <span>favorite guitars</span> with Rhythm.</div>
+								<div class="app__buttons">
+									<button type="submit" class="app__button"><img src="@img/app/play.svg" alt=""></button>
+									<button type="submit" class="app__button"><img src="@img/app/apple.svg" alt=""></button>
+								</div>
+							</div>
+							<div class="app__image-block">
+								<div class="app__image"><img src="@img/app/01.png" alt="image"></div>
+								<div class="app__image"><img src="@img/app/02.png" alt="image"></div>
+							</div>
+						</div>
+					</div>
+				</section>
+			</main>
+			@@include('html/_footer.htm',{})
+		</div>
+		@@include('html/_popup.htm',{})
+		@@include('html/_js.htm',{})
+	</body>
+</html>

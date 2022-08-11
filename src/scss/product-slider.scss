@@ -1,0 +1,119 @@
+.products-slider {
+
+	@media (max-width: em(1230)){
+		position: relative;
+		z-index: 2;
+	}
+	// .products-slider__container
+
+	&__container {
+	}
+
+	// .products-slider__header
+
+	&__header {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		@include adaptiveValue("padding-bottom", 32, 15);
+		color: $mainOrange;
+
+	}
+
+	// .products-slider__title
+
+	&__title {
+
+	}
+
+	// .products-slider__more
+
+	&__more {
+		@media (any-hover: hover){
+			&:hover{
+				text-decoration: underline;
+			}
+		}
+	}
+
+	// .products-slider__slider
+
+	&__slider {
+	}
+
+	// .products-slider__swiper
+
+	&__swiper {
+	}
+
+	// .products-slider__slide
+
+	&__slide {
+	}
+}
+.product-card {
+
+	@media (max-width: em(1230)){
+		position: relative;
+		z-index: 2;
+	}
+	background-color: #fff;
+	display: grid;
+	height: 100%;
+	grid-template-rows: auto 1fr;
+	box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.1);
+	transition: box-shadow 0.3s ease 0s;
+	position: relative;
+	@media (any-hover: hover) {
+		&:hover {
+			box-shadow: 0px 10px 25px rgba(0, 0, 0, 0.2);
+		}
+	}
+	// .product-card__sale
+	&__sale {
+
+	}
+	// .product-card__image
+	&__image {
+		@include adaptiveValue("padding-top", 25, 15);
+		@include adaptiveValue("padding-bottom", 40, 15);
+		@include adaptiveValue("padding-left", 50, 15);
+		@include adaptiveValue("padding-right", 50, 15);
+	}
+	// .product-card__item-image-ibg
+	&__item-image-ibg {
+		display: block;
+		padding-bottom: percent(190, 364);
+	}
+	// .product-card__body
+	&__body {
+		@include adaptiveValue("padding-left", 50, 15);
+		@include adaptiveValue("padding-right", 50, 15);
+		@include adaptiveValue("padding-bottom", 25, 15);
+	}
+	// .product-card__title
+	&__title {
+		flex: 1 1 auto;
+		line-height: math.div(24, 16);
+		color: $mainColor;
+		@include adaptiveValue("padding-bottom", 7, 5);
+		@media (any-hover: hover){
+			&:hover{
+				text-decoration: underline;
+			}
+		}
+	}
+	// .product-card__footer
+	&__footer {
+
+	}
+	// .product-card__price
+	&__price {
+		font-weight: 400;
+		font-size: rem(14);
+		line-height: math.div(21, 14);
+		color: #666666;
+		flex: 1 1 auto;
+
+	}
+}
